@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    display: flex;
+    background-color: #fff;
+}
+
+.sidebar {
+    width: 333px;
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+    background-color: #eee;
+}
+
+.resizer {
+    width: 10px;
+    padding: 12px;
+    top: 0;
+    right: 0;
+    cursor: col-resize;
+    height: 100%;
+    position: absolute;
+    background-color: none;
+}
+
+.sidebar-header {
+    padding: 22px 11px;
+    background-color: white;
+    margin: 12px;
+    border-radius: 15px;
+}
+
+.sidebar-header h3 {
+    color: #2e2e9b;
+}
+
+.sidebar-header h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sidebar ul {
+    padding: 11px 0px;
+    padding-left: 2px;
+    list-style: none;
+}
+
+.sidebar li {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px;
+    display: block;
+}
+
+.sidebar ul li:hover {
+    background-color: #fffbfb;
+}
+
+.sidebar ul a:link, .sidebar ul a:visited {
+    background-color: #636363;
+    color: white;
+    padding: 10px 20px;
+    margin: 0px 15px;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+}
+
+main {
+    flex-grow: 1;
+    padding: 3% 22px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+h1 {
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
